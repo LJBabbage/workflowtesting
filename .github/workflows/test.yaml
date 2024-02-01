@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+
+on:
+  push:
+    branches: [ main ]
+#   only triggers on ip-whitelist subdirectory
+    paths:
+      - 'seft-ci-ingestion/**'
+      - '.github/workflows/test.yaml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'seft-ci-ingestion/**'
+      - '.github/workflows/test.yaml'
+
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Basic test order 1"

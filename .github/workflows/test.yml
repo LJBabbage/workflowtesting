@@ -6,12 +6,12 @@ on:
 #   only triggers on ip-whitelist subdirectory
     paths:
       - 'seft-ci-ingestion/**'
-      - '.github/workflows/test.yaml'
+      - '.github/workflows/test.yml'
   pull_request:
     branches: [ main ]
     paths:
       - 'seft-ci-ingestion/**'
-      - '.github/workflows/test.yaml'
+      - '.github/workflows/test.yml'
 
 
 jobs:
